@@ -1,38 +1,62 @@
 .App {
   text-align: center;
+  border-style: solid;
+  border-width: 50px;
+  border-color: rgb(220, 186, 135);
+  font-family: 'Patrick Hand', cursive;
+  font-size: larger;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-size: 50px;
+  display: inline-block;
+  -webkit-animation: bounce .3s ease infinite alternate;
+          animation: bounce .3s ease infinite alternate;
 }
+h1 { -webkit-animation-delay: .1s; animation-delay: .1s; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 3px 0 #CCC,
+                 0 4px 0 #CCC,
+                 0 5px 0 #CCC,
+                 0 6px 0 #CCC,
+                 0 7px 0 #CCC,
+                 0 8px 0 #CCC,
+                 0 9px 0 #CCC,
+  0 10px 0 #CCC,
+               0 11px 0 #CCC,
+               0 12px 0 #CCC,
+               0 13px 0 #CCC,
+   0 14px 0 #CCC,
+               0 15px 0 #CCC,
+                 0 50px 25px rgba(0, 0, 0, .2);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
+body {
+  background-color: lavender;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.yellow {
+  background-color:rgb(235, 227, 193);
+  top: 50px;
+  border-radius: 500px;
+  margin: 40px;
+  height: 70px;
+ 
+}
+.cyan {
+  background-color: rgb(163, 230, 230);
+  border-radius: 500px;
+  margin: 40px;
+  height: 70px
+}
+.tan {
+  background-color: tan;
+  border-radius: 500px;
+  margin: 40px;
+  height: 70px 
 }
